@@ -1,0 +1,22 @@
+# NAME
+
+WebService::WolframAlpha -
+
+# SYNOPSIS
+
+    use WebService::WolframAlpha;
+
+# DESCRIPTION
+
+WebService::WolframAlpha is
+
+# AUTHOR
+
+eru.tndl <eru.tndl@gmail.com>
+
+# SEE ALSO
+
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
