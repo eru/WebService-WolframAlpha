@@ -5,6 +5,8 @@ readme_markdown_from 'lib/WebService/WolframAlpha.pm';
 githubmeta;
 
 # requires '';
+requires 'URI';
+requires 'LWP::UserAgent';
 
 tests 't/*.t';
 author_tests 'xt';

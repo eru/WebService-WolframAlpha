@@ -19,9 +19,11 @@ no_index:
     - t
     - xt
 requires:
+  LWP::UserAgent: 0
+  URI: 0
   perl: 5.012004
 resources:
   homepage: https://github.com/eru/WebService-WolframAlpha/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/eru/WebService-WolframAlpha.git
-version: 0.01
+version: 1.00

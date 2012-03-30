@@ -9,7 +9,7 @@ use base qw(Class::Accessor::Fast);
 use URI;
 use LWP::UserAgent;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 __PACKAGE__->mk_accessors(qw(appid useragent xml is_success error));
 
