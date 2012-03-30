@@ -41,13 +41,14 @@ sub get_xml {
 
     my %timeout = (sum => 0);
     foreach(split('&', $uri->query)) {
-        if($_ =~ /^(scan|pod|format)timeout=(\d+)$/o) {
+        if($_ =~ /^(scan|pod|format|parse)timeout=(\d+)$/o) {
             $timeout{$1} = $2;
         }
     }
     $timeout{sum} += $timeout{scan}   || 3;
     $timeout{sum} += $timeout{pod}    || 4;
     $timeout{sum} += $timeout{format} || 8;
+    $timeout{sum} += $timeout{parse}  || 5;
     $self->{ua}->timeout($timeout{sum});
 
     my $response = $self->{ua}->get($uri->as_string);
@@ -103,6 +104,35 @@ WebService::WolframAlpha - Interface to WolframAlpha API
 =head1 SYNOPSIS
 
   use WebService::WolframAlpha;
+
+  my $wa = WebService::WolframAlpha->new( {
+      appid     => 'Your WolframAlpha AppID',
+      useragent => 'Your UserAgent', # Default is "WebService::WolframAlpha::$VERSION"
+  } );
+
+  ## This parameters based on API Document "Query Parameters" section
+  $wa->query( {
+      input         => 'pi',
+      format        => 'plaintext,image',
+      includepodid  => ['*'],
+  #   excludepodid  => '',
+      podtitle      => '*',
+      podindex      => '2,3,5',
+      scanner       => '',
+      async         => 'false',
+      units         => 'metric',
+      ## LWP::Useragent->timeout set sum of the timeout paramaters
+      scantimeout   => 3,
+      podtimeout    => 4,
+      formattimeout => 8,
+      parsetimeout  => 5,
+  } );
+
+  if($wa->is_success) {
+      print $wa->xml;
+  } else {
+      print $wa->error;
+  }
 
 =head1 DESCRIPTION
 

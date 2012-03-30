@@ -26,4 +26,4 @@ resources:
   homepage: https://github.com/eru/WebService-WolframAlpha/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/eru/WebService-WolframAlpha.git
-version: 1.00
+version: 1.01
