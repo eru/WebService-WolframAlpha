@@ -1,6 +1,6 @@
 # NAME
 
-WebService::WolframAlpha -
+WebService::WolframAlpha - Interface to WolframAlpha API
 
 # SYNOPSIS
 
@@ -8,13 +8,25 @@ WebService::WolframAlpha -
 
 # DESCRIPTION
 
-WebService::WolframAlpha is
+This module provides a convenient interface for using the WolframAlpha API v2.
+
+For complete information about the WolframAlpha API v2 please visit:
+[http://products.wolframalpha.com/api/documentation.html](http://products.wolframalpha.com/api/documentation.html)
+
+To use this module you must obtain an API key.
 
 # AUTHOR
 
 eru.tndl <eru.tndl@gmail.com>
 
 # SEE ALSO
+
+- Wolfram|Alpha API: Terms of Use
+[http://products.wolframalpha.com/api/termsofuse.html](http://products.wolframalpha.com/api/termsofuse.html)
+- Wolfram|Alpha API: Interactive API Explorer
+[http://products.wolframalpha.com/api/explorer.html](http://products.wolframalpha.com/api/explorer.html)
+- Perl extension for the WolframAlpha API v1
+[WWW::WolframAlpha](http://search.cpan.org/perldoc?WWW::WolframAlpha)
 
 # LICENSE
 

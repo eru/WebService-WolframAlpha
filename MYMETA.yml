@@ -1,11 +1,11 @@
 ---
-abstract: unknown
+abstract: 'Interface to WolframAlpha API'
 author:
   - 'eru.tndl <eru.tndl@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.36
+  ExtUtils::MakeMaker: 6.59
 configure_requires:
-  ExtUtils::MakeMaker: 6.36
+  ExtUtils::MakeMaker: 6.59
 dynamic_config: 0
 generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.112150'
 license: perl
@@ -18,7 +18,8 @@ no_index:
     - inc
     - t
     - xt
-requires: {}
+requires:
+  perl: 5.012004
 resources:
   homepage: https://github.com/eru/WebService-WolframAlpha/tree
   license: http://dev.perl.org/licenses/

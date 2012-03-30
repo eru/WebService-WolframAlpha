@@ -1,5 +1,5 @@
 {
-   "abstract" : "unknown",
+   "abstract" : "Interface to WolframAlpha API",
    "author" : [
       "eru.tndl <eru.tndl@gmail.com>"
    ],
@@ -23,16 +23,18 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.36"
+            "ExtUtils::MakeMaker" : "6.59"
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.36"
+            "ExtUtils::MakeMaker" : "6.59"
          }
       },
       "runtime" : {
-         "requires" : {}
+         "requires" : {
+            "perl" : "5.012004"
+         }
       }
    },
    "release_status" : "stable",
