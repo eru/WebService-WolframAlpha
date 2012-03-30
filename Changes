@@ -1,4 +1,7 @@
 Revision history for Perl extension WebService::WolframAlpha
 
+1.00    Fri Mar 30 11:41:00 2012
+        - experimental implementation
+
 0.01    Wed Mar 28 09:09:18 2012
         - original version
